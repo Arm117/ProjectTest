@@ -20,9 +20,10 @@ from enrollsys import views
 
 urlpatterns = [
 
-    path("", include("enrollsys.urls")),
+    path("", include("web_project.urls")),
     path('admin/', admin.site.urls),
     path("", views.home, name="home"),
     #path("hello/<name>", views.hello_there, name="hello_there"),
+    
 
 ]

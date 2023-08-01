@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
-# Application definition
+# Application definitions 
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'enrollsys',
-    #'rest_framework',
+    'enrollsys.apps.EnrollsysConfig',
+    'rest_framework',
 
 ]
 
@@ -87,6 +87,16 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+    #    'default': {
+    #       'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #       'NAME': ‘schooldb’,
+    #       'USER': 'admin',
+    #       'PASSWORD': '!P@SSword12345',
+    #       'HOST': '127.0.0.1', 'localhost',
+    #       'PORT': '5432',
+    #  }
+
+
 }
 
 
